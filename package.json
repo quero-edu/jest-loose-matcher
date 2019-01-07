@@ -1,0 +1,49 @@
+{
+  "name": "jest-loose-matcher",
+  "version": "1.0.0",
+  "description": "Loosely matches anything",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf ./dist && tsc",
+    "lint": "tslint --project ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eduardo_matos/jest-loose-matcher.git"
+  },
+  "author": "Eduardo Matos",
+  "license": "UNLICENSED",
+  "directories": {
+    "lib": "./dist"
+  },
+  "peerDependencies": {
+    "jest": "23.x"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.11",
+    "jest": "23.6.0",
+    "ts-jest": "23.10.5",
+    "tslint": "5.12.0",
+    "typescript": "3.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "ts-jest"
+    },
+    "testRegex": "/tests/.*.test\\.(ts|tsx|js)$"
+  },
+  "dependencies": {
+    "deep-eql": "4.0.0"
+  }
+}

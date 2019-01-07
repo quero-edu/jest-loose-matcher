@@ -1,0 +1,4 @@
+--exit
+--recursive
+-r ts-node/register
+tests/**/*.ts
