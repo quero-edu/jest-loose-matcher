@@ -47,7 +47,7 @@ describe('ToLooselyEqual', () => {
             h: {
               i: 5,
               j: {
-                k: approximately(new Date('2001-02-03T04:05:08.007Z'), seconds(4)),
+                k: approximately(new Date('2001-02-03T04:05:06.010Z'), 4),
               },
             },
           },
@@ -55,8 +55,8 @@ describe('ToLooselyEqual', () => {
       },
     });
   });
-});
 
-it('Works with deep nested arrays', () => {
-  expect([1, [2, [3, [4, [5]]]]]).toLooselyEqual([anything(), [atLeast(0), [3, [4, [oneOf(4, 5, 6)]]]]]);
+  it('Works with deep nested arrays', () => {
+    expect([1, [2, [3, [4, [5]]]]]).toLooselyEqual([anything(), [atLeast(0), [3, [4, [oneOf(4, 5, 6)]]]]]);
+  });
 });

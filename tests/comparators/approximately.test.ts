@@ -1,6 +1,5 @@
 import { approximately } from '../../src';
 import { toString } from '../../src/comparators/utils';
-import { hours } from '../../src/time-interval';
 
 describe('Comparators/Approximately', () => {
   describe('With numbers', () => {
@@ -63,4 +62,8 @@ describe('Comparators/Approximately', () => {
       });
     });
   });
+
+  function hours(interval) {
+    return interval * 1000 * 60 * 60;
+  }
 });

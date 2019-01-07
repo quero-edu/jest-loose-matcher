@@ -45,7 +45,5 @@ expect.extend({
         },
       }),
       message: () => msg };
-
-    return expect(actual).toEqual(expected);
   },
 });
