@@ -18,9 +18,6 @@
   "directories": {
     "lib": "./dist"
   },
-  "peerDependencies": {
-    "jest": "21.x || 23.x"
-  },
   "devDependencies": {
     "@types/jest": "23.3.11",
     "jest": "23.6.0",
