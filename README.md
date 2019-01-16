@@ -1,5 +1,7 @@
 # Jest Loose Matcher
 
+[![Build Status](https://travis-ci.org/eduardo-matos/jest-loose-matcher.svg?branch=master)](https://travis-ci.org/eduardo-matos/jest-loose-matcher)
+
 Loosely matches any value
 
 ## Install
