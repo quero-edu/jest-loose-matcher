@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/eduardo_matos/jest-loose-matcher.git"
+    "url": "git+ssh://git@github.com/quero-edu/jest-loose-matcher.git"
   },
   "author": "Eduardo Matos",
   "license": "UNLICENSED",
