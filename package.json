@@ -13,6 +13,13 @@
     "type": "git",
     "url": "git+ssh://git@github.com/quero-edu/jest-loose-matcher.git"
   },
+  "keywords": [
+    "jest",
+    "plugin",
+    "tdd",
+    "tests",
+    "matcher"
+  ],
   "author": "Eduardo Matos",
   "license": "UNLICENSED",
   "directories": {
