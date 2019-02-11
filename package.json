@@ -1,6 +1,6 @@
 {
   "name": "jest-loose-matcher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Loosely matches anything",
   "main": "dist/index.js",
   "scripts": {
