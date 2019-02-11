@@ -24,19 +24,19 @@ expect.extend({
 
     return {
       pass: deepEql(actual, expected, {
-        comparator(lho: any, rho: any) {
-          if (lho.compare && rho.compare) {
+        comparator(leftHandOperator: any, rightHandOperator: any) {
+          if ((leftHandOperator && leftHandOperator.compare) && (rightHandOperator && rightHandOperator.compare)) {
             return false;
           }
 
-          if (rho.compare) {
-            const res = rho.compare(lho);
+          if (rightHandOperator && rightHandOperator.compare) {
+            const res = rightHandOperator.compare(leftHandOperator);
             msg = res.message();
             return res.pass;
           }
 
-          if (lho.compare) {
-            const res = lho.compare(rho);
+          if (leftHandOperator && leftHandOperator.compare) {
+            const res = leftHandOperator.compare(rightHandOperator);
             msg = res.message();
             return res.pass;
           }
@@ -47,3 +47,4 @@ expect.extend({
       message: () => msg };
   },
 });
+

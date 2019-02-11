@@ -59,4 +59,9 @@ describe('ToLooselyEqual', () => {
   it('Works with deep nested arrays', () => {
     expect([1, [2, [3, [4, [5]]]]]).toLooselyEqual([anything(), [atLeast(0), [3, [4, [oneOf(4, 5, 6)]]]]]);
   });
+
+  it('Works when an operator is explicitly undefined', () => {
+    expect({ foo: undefined }).toLooselyEqual({ foo: oneOf(undefined) });
+    expect({ foo: oneOf(undefined) }).toLooselyEqual({ foo: undefined });
+  });
 });
